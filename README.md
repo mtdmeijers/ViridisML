@@ -1,6 +1,6 @@
 # ViridisML
 
-ViridisML trains a machine learning model to detect chlorophyll-a concentrations in satellite ocean-color imagery and visualises the results as time-series maps and animations.
+ViridisML is an ongoing project that trains a machine learning model to detect chlorophyll-a concentrations in satellite ocean-color imagery and visualises the results as time-series maps and animations.
 
 Chlorophyll-a is the primary pigment in phytoplankton and serves as a proxy for ocean productivity and ecosystem health. This project uses NASA MODIS-Aqua satellite data to build a pipeline that ingests, models, and visualises chlorophyll-a concentration over a region of interest.
 
@@ -8,10 +8,10 @@ Chlorophyll-a is the primary pigment in phytoplankton and serves as a proxy for 
 
 | Component | Status |
 |---|---|
-| Data acquisition (NASA OceanData / MODIS-Aqua) | ✅ Implemented (`down_files.py`) |
-| Regional extraction & preprocessing (xarray) | ✅ Implemented (`chlorophyll.ipynb`) |
-| Visualization (static frames, MP4/GIF animation, Kepler.gl export) | ✅ Implemented (`chlorophyll.ipynb`) |
-| ML model for chlorophyll detection/prediction | 🔄 In development |
+| Data acquisition (NASA OceanData / MODIS-Aqua) |  Implemented |
+| Regional extraction & preprocessing (xarray) |  Implemented |
+| Visualization (static frames, MP4/GIF animation, Kepler.gl export) |  Implemented |
+| ML model for chlorophyll detection/prediction | In development |
 
 The current codebase implements the data pipeline and visualization layer end-to-end. The ML component — training a model to spot/predict chlorophyll-a concentration from satellite bands — is the active area of development; this README describes the intended pipeline and where model training fits in.
 
