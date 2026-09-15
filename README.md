@@ -2,7 +2,7 @@
 
 ViridisML trains a machine learning model to detect chlorophyll-a concentrations in satellite ocean-color imagery and visualises the results as time-series maps and animations.
 
-Chlorophyll-a is the primary pigment in phytoplankton and serves as a proxy for ocean productivity and ecosystem health. This project uses NASA MODIS-Aqua satellite data to build a pipeline that ingests, models, and visualises chlorophyll-a concentration over a region of interest (default: the Red Sea).
+Chlorophyll-a is the primary pigment in phytoplankton and serves as a proxy for ocean productivity and ecosystem health. This project uses NASA MODIS-Aqua satellite data to build a pipeline that ingests, models, and visualises chlorophyll-a concentration over a region of interest.
 
 ## Project Status
 
