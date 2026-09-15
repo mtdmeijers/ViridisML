@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data files (can be large)
+data/*.nc
+data/*.h5
+data/*.hdf
+
+# Generated outputs
+frames/*.png
+*.mp4
+*.gif
+*.avi
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+
+# Environment variables (credentials)
+.env
+.env.local
+*.env
+
