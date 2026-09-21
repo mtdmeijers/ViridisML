@@ -13,13 +13,13 @@ Chlorophyll-a is the primary pigment in phytoplankton and serves as a proxy for 
 | Visualisation (static frames, MP4/GIF animation, Kepler.gl export) |  Implemented |
 | ConvLSTM for chlorophyll detection/prediction | In development |
 
-The current codebase implements the data pipeline and visualization layer end-to-end. The ML component — training a model to spot/predict chlorophyll-a concentration from satellite bands — is the active area of development; this README describes the intended pipeline and where model training fits in.
+The current codebase implements the data pipeline and visualisation layer end-to-end. The ML component — training a model to spot/predict chlorophyll-a concentration from satellite bands — is the active area of development; this README describes the intended pipeline and where model training fits in.
 
 ## How It Works
 
 ```
 NASA OceanData (MODIS-Aqua L3) → NetCDF files → xarray preprocessing
-        → [ ML model: concentration detection ] → visualization (frames, animation, Kepler.gl)
+        → [ ML model: concentration detection ] → visualisation (frames, animation, Kepler.gl)
 ```
 
 1. **Download**: Pull MODIS-Aqua Level 3 chlorophyll-a NetCDF granules from NASA OceanData for a date range.
@@ -74,7 +74,7 @@ jupyter lab chlorophyll.ipynb
 
 The notebook extracts the region of interest, generates per-timestep frames in `frames/`, and compiles them into an animation (`chlorophyll_animation.mp4`, with a matplotlib/GIF fallback).
 
-### 3. Export for interactive visualization (optional)
+### 3. Export for interactive visualisation (optional)
 
 The notebook includes a Kepler.gl export step that writes a CSV/GeoJSON (e.g. `kepler_chlorophyll.geojson`) you can drop into [kepler.gl](https://kepler.gl/) for interactive, time-animated maps.
 
@@ -97,7 +97,7 @@ dpi = 150
 
 ```
 ViridisML/
-├── chlorophyll.ipynb          # Data extraction, (planned) model application, and visualization
+├── chlorophyll.ipynb          # Data extraction, (planned) model application, and visualisation
 ├── down_files.py               # MODIS-Aqua data downloader
 ├── check_environment.py        # Diagnoses local Python/package setup
 ├── aqua_modis_dl.txt            # URL list for batch downloads
